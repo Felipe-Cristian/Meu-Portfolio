@@ -57,13 +57,13 @@ html{
 /*Estilo da Capa e do Texto da Capa*/
 section{
     background-color: var(--background);
-    height: 100vh;
 }
 
 .destaque{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 95vh;
 }
 .destaque-img, .destaque-texto{
     width: 50%;
@@ -100,7 +100,7 @@ section{
     display: flex;
     position: absolute;
     left: 310px;
-    bottom: 200px;
+    bottom: 150px;
     
 }
 .destaque-botoes a{
