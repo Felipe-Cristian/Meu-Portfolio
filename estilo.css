@@ -1,10 +1,11 @@
+/*Estilos Gerais*/
 *{
     margin: 0;
     padding: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 :root{
-    --background: #1d1923;
+    --background: #1e1826;
     --fontColor: #09fe05;
     --fontColorText: #fff;
 }
@@ -14,8 +15,10 @@ html{
 
 .limita-largura{
     max-width: 1024px;
+    margin: 0 auto;
 }
 
+/*Estilo do Topo e Barra de Navegação*/
 .topo{
     background-color: var(--background);
 }
@@ -51,6 +54,23 @@ html{
     transition: ease-in-out .2s;
 }
 
+/*Estilo da Capa e do Texto da Capa*/
+.destaque{
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destaque-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destaque-img img{
+    width: 100%;
+}
 
 
 
