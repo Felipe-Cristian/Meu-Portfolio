@@ -5,7 +5,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 :root{
-    --background: #5b4a76;
+    --background: #171022;
     --fontColor: #09fe05;
     --fontColorText: #fff;
 }
@@ -55,22 +55,65 @@ html{
 }
 
 /*Estilo da Capa e do Texto da Capa*/
-.destaque{
+section{
     background-color: var(--background);
     height: 100vh;
+}
+
+.destaque{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.destaque-img{
+.destaque-img, .destaque-texto{
     width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-.destaque-img img{
-    width: 100%;
+.destaque img{
+    width: 80%;
+}
+.destaque-texto{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--fontColor);
+    background-color: var(--fontColor);
+    margin: 70px;
+    position: relative;
+}
+.destaque-texto h1{
+    color: var(--background);
+    font-size: 45pt;
+    margin: 20px;
+}
+.destaque-texto h3{
+    padding: 10px;
+    margin: 10px;
+    color: var(--fontColor);
+    background-color: var(--background);
+    border-radius: 10px;
 }
 
+.destaque-botoes{
+    display: flex;
+    position: absolute;
+    left: 310px;
+    bottom: 200px;
+    
+}
+.destaque-botoes a{
+    color: var(--background);
+    text-decoration: none;
+    background-color: var(--fontColor);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px var(--fontColor);
+    margin: 10px;
+}
 
-
+.destaque-botoes a:hover{
+    background-color: var(--fontColorText);
+    transition: ease-in-out .3s;
+}
