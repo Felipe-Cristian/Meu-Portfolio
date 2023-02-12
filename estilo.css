@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .top-general{
     display: flex;
     justify-content: space-around;
