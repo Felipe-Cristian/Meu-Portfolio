@@ -120,7 +120,7 @@ html{
 
 
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 465px){
     .top-general{
         display: flex;
         flex-direction: column;
