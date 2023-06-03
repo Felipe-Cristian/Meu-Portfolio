@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/*MENU*/
+.logo{
+    color: rgb(240, 12, 12);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 20px;
+}
+nav{
+    background-color: rgba(16, 16, 16);
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(206, 204, 204);
+    padding: 10px 0;
+    transition: all .3s ease-in-out;
+    font-size: 17px;
+}
+a.active, a:hover{
+    color: rgb(240, 12, 12)
+}
+
+.checkbtn{
+    float: right;
+    margin: 27px 20px;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
+
+/*HAMBURGER*/
+.hamburger{
+    width: 35px;
+    height: 35px;
+    
+}
+.hamburger span{
+    display: block;
+    height: 5px;
+    width: 35px;
+    margin-bottom: 5px;
+    background-color: rgb(240, 12, 12);
+    border-radius: 3px;
+}
+
+
+/*CAPA*/
+.destaque{
+    background-image: url(assets/capa-destaque.jpg);
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destaque-titulo{
+    width: 30%;
+    text-align: center;
+    color: rgb(206, 204, 204);
+    text-shadow: 1px 1px 5px black;
+}
+.destaque-titulo h1{
+    font-size: 2.7rem;
+    border-top: 5px solid rgb(240, 12, 12);
+    border-bottom: 5px solid rgb(240, 12, 12);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.destaque-titulo p{
+    font-size: 1.2rem;
+}
+
+
+
+
+/*RESPONSIVIDADE DO MENU*/
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(16, 16, 16);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s ease-in-out;
+
+    }
+
+    nav ul li{
+        display: block;
+        border-bottom: 2px solid rgb(240, 12, 12);
+        border-radius: 5px;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+    nav ul li a{
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .destaque-titulo{
+        width: 80%;
+    }
+    .destaque-titulo h1{
+        font-size: 2.5rem;
+    }
+}
