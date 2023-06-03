@@ -106,6 +106,39 @@ a.active, a:hover{
     font-size: 1.2rem;
 }
 
+.destaque-redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.destaque-redes-sociais a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(206, 204, 204);
+    border: 2px solid rgb(206, 204, 204);
+    border-radius: 5px;
+    background-color: rgba(16, 16, 16);
+    padding: 8px 10px;
+    box-shadow: 0 0 3px black;
+    width: 60%;
+}
+.destaque-redes-sociais a:hover{
+    border: 2px solid rgb(240, 12, 12);
+}
+.destaque-redes-sociais a img{
+    width: 30px;
+    margin-right: 10px;
+}
+.destaque-redes-sociais a p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
 
 /*Seções*/
 .container{
@@ -146,8 +179,6 @@ a.active, a:hover{
 
 
 
-
-
 /*RESPONSIVIDADE DO MENU*/
 @media (max-width: 858px){
     .checkbtn{
@@ -185,8 +216,13 @@ a.active, a:hover{
 
     .destaque-titulo{
         width: 80%;
+        margin-top: 100px;
     }
     .destaque-titulo h1{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+
+    .destaque-redes-sociais{
+        flex-direction: column;
     }
 }
