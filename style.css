@@ -39,14 +39,15 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 15px;
 }
 nav ul li a{
     text-decoration: none;
     color: rgb(206, 204, 204);
     padding: 10px 0;
     transition: all .3s ease-in-out;
-    font-size: 17px;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 a.active, a:hover{
     color: rgb(240, 12, 12)
@@ -137,11 +138,12 @@ a.active, a:hover{
 }
 .destaque-redes-sociais a img{
     width: 30px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .destaque-redes-sociais a p{
     font-size: 1rem;
     letter-spacing: 1px;
+    padding: 0 10px 0 0;
 }
 
 .balao-whatsapp{
@@ -186,11 +188,40 @@ a.active, a:hover{
     width: 100%;
     height: 70%;
     margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container-conteudo .titulo-conteudo h1{
     color: rgb(240, 12, 12);
     font-size: 2rem;
     margin-top: 40px;
+}
+.div-box{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.div-box img{
+    height: 100%;
+    
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descricao h3{
+    font-size: 4.5rem;
+    color: rgb(240, 12, 12)
+}
+.descricao span{
+    font-size: 1.7rem;
+    color: rgb(239, 234, 234);
+    margin: 10px;
 }
 
 
@@ -262,4 +293,20 @@ a.active, a:hover{
         right: 15px;
         bottom: 15px;
     }
-}
+
+    .box-conteudo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-box{
+        width: 90%;
+    
+    }
+    .div-box img{
+        border-bottom: 3px solid rgb(240, 12, 12);
+        padding-left: 45px;
+    }
+    .descricao{
+        text-align: center;
+    }
