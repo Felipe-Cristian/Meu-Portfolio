@@ -91,7 +91,7 @@ a.active, a:hover{
     flex-direction: column;
 }
 .destaque-titulo{
-    width: 50%;
+    width: 30%;
     text-align: center;
     color: rgb(239, 234, 234);
     background-color: rgba(0, 0, 0, 0.679);
@@ -142,6 +142,17 @@ a.active, a:hover{
 .destaque-redes-sociais a p{
     font-size: 1rem;
     letter-spacing: 1px;
+}
+
+.balao-whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.balao-whatsapp img{
+    width: 60px;
+    box-shadow: 0 0 5px black;
 }
 
 
@@ -235,7 +246,7 @@ a.active, a:hover{
     .destaque-titulo{
         width: 80%;
         margin-top: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .destaque-titulo h1{
         font-size: 2.3rem;
@@ -246,6 +257,10 @@ a.active, a:hover{
     .destaque-redes-sociais{
         flex-direction: column;
         width: 90%;
-        
+    }
+
+    .balao-whatsapp{
+        right: 15px;
+        bottom: 15px;
     }
 }
