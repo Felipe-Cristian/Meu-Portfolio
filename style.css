@@ -191,38 +191,50 @@ a.active, a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.container-conteudo .titulo-conteudo h1{
-    color: rgb(240, 12, 12);
-    font-size: 2rem;
-    margin-top: 40px;
-}
-.div-box{
-    width: 50%;
-    height: 100%;
     overflow: hidden;
 }
 
-.div-box img{
+.div-box{
+    width: 50%;
     height: 100%;
-    
+    margin: 10px;
+}
+.sobre-img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 5px solid rgb(240, 12, 12);
 }
 
-.descricao{
+.sobre-texto{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
-.descricao h3{
-    font-size: 4.5rem;
+.sobre-texto h2, h5{
+    text-align: center;
     color: rgb(240, 12, 12)
 }
-.descricao span{
-    font-size: 1.7rem;
-    color: rgb(239, 234, 234);
-    margin: 10px;
+
+.sobre-texto h2{
+    font-size: 3rem;
 }
+
+.sobre-texto h5{
+    font-size: 1.3rem;
+}
+.sobre-texto p{
+    margin-top: 10px;
+    text-align: justify;
+    color: rgb(239, 234, 234);
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.sobre-texto b, span{
+    color: rgb(240, 12, 12);
+    font-weight: bold;
+}
+
 
 
 
@@ -296,17 +308,27 @@ a.active, a:hover{
 
     .box-conteudo{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
     }
+
     .div-box{
-        width: 90%;
-    
+        width: 100%;
+        margin: 0;
+
     }
-    .div-box img{
-        border-bottom: 3px solid rgb(240, 12, 12);
-        padding-left: 45px;
+    .sobre-texto h2, h5{
+        display: none;
     }
-    .descricao{
-        text-align: center;
+    .sobre-texto p{
+        font: 15px;
+    }
+
+    .sobre-texto p:last-child{
+        display: none;
+        border-bottom: 2px solid rgb(240, 12, 12);
+    } 
+
+    .sobre-img img{
+        height: 100%;
+        margin-left: 50px;
     }
