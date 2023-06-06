@@ -98,7 +98,7 @@ a.active, a:hover{
     background-color: rgba(0, 0, 0, 0.679);
     border-radius: 10px;
     box-shadow: 0 0 10px black;
-    
+    margin-top: 100px;    
 }
 .destaque-titulo h1{
     font-size: 2.7rem;
@@ -308,6 +308,41 @@ a.active, a:hover{
 
 }
 
+.galeria-tech{
+    width: 100%;
+    background: rgb(239, 234, 234);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.galeria-cards-tech{
+    width: 31%;
+    height: 45%;
+    background-color: rgb(17, 17, 17);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.galeria-cards-tech img{
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 2px solid red;
+}
+.galeria-cards-tech p{
+    font-size: 1.7rem;
+    color: rgb(239, 234, 234);
+    font-weight: 800;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(240, 12, 12);
+    color: rgb(239, 234, 234);
+}
+
 
 /*RESPONSIVIDADE DO MENU*/
 @media (max-width: 858px){
@@ -409,4 +444,21 @@ a.active, a:hover{
     }
     .galeria-cards{
         width: 94%;
+    }
+
+    .galeria-cards-tech{
+        flex-direction: column;
+        width: 94%;
+        justify-content: center;
+        align-items: center;
+    }
+    .galeria-cards-tech img{
+        border-bottom: 2px solid rgb(240, 12, 12);
+        border-right: none;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    footer{
+        padding: 10px;
     }
